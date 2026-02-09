@@ -1,0 +1,528 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+:root{
+    --bg-color:#1E1E1E;
+    --caixa-azul:#1E2230;
+    --cor-txt:#E0E0E0;
+    --cor-txt-azul:#70C1FF;
+    --cor-btn: #111184;
+}
+
+body{
+    background-color: var(--bg-color) !important;
+    font-family: "Inter", sans-serif !important;
+    color:white !important;
+       
+}
+
+
+
+
+
+
+
+.menu-box{
+    display: flex;
+    width: 346px;
+    height: 48px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: 20px;
+    background-color: var(--caixa-azul);
+    border-radius: 15px;
+   
+}
+
+/*Menu */
+
+/* Estilo base do ícone */
+.menu-box a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efeito elástico */
+}
+
+.menu-box svg {
+    fill: var(--cor-txt); 
+    transition: all 0.3s ease;
+
+}
+
+
+.menu-box a:hover {
+    transform: translateY(-5px); /* O ícone sobe levemente */
+}
+
+.menu-box a:hover svg {
+    fill: #72b5f2; /* Muda para o seu azul de destaque */
+    filter: drop-shadow(0 0 8px rgba(114, 181, 242, 0.6)); /* Efeito de brilho neon */
+}
+
+.btn-primary {
+    background-color: #72b5f2 !important;
+    border-color: #72b5f2 !important;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(114, 181, 242, 0.4);
+}
+
+
+
+.caixa-com-foto{
+    display: flex;
+    height: 400px;
+    width: auto;
+    background-color: var(--caixa-azul);
+   border-radius: 12px;
+   }
+
+nav{
+    display: flex;
+}
+
+
+
+
+.menu-box a {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05); /* Um fundo bem sutil */
+    transition: all 0.3s ease;
+}
+
+.menu-box a:hover {
+    background-color: rgba(114, 181, 242, 0.2); /* Fundo azul sutil no hover */
+}
+
+
+
+
+
+
+
+.primeiro{
+    height: auto;
+    margin-bottom: 200px;
+    margin-top: 10px;
+}
+
+.segundo{
+    height: auto;
+    margin-bottom: 200px;
+    
+}
+
+
+.btn-primary a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.destaque{
+    color: var(--cor-txt-azul);
+}
+
+.texto-corpo{
+    font-size: x-large;
+    color: var(--cor-txt-azul);
+}
+
+
+.titulos-destaque{
+    color: var(--cor-txt-azul);
+    font-size: xx-large;
+    
+}
+
+p{
+    font-size: x-large;
+}
+
+
+.caixa-projeto {
+    background-color: #1e2029;
+    border-radius: 20px;
+    overflow: hidden; /* Importante para a imagem respeitar o arredondamento do card */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-imagem {
+    width: 100%;
+    height: 250px; /* Defina a altura que desejar para a área da imagem */
+    overflow: hidden;
+}
+
+.caixa-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    object-position: center; /* Centraliza a imagem caso ela precise ser cortada */
+    transition: transform 0.5s ease; /* Para um efeito de zoom ao passar o mouse */
+}
+
+/* Efeito opcional de zoom suave ao passar o mouse */
+.caixa-projeto:hover .caixa-imagem img {
+    transform: scale(1.1);
+}
+
+.caixa-texto {
+    padding: 20px;
+    background-color: #1e2029;
+    z-index: 1; /* Garante que o texto fique sobre a imagem se houver sobreposição */
+}
+.caixa-texto h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.caixa-texto p {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.titulo-sessao span{
+    color: var(--cor-txt-azul);
+}
+
+.caixa-projeto:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    border: 1px solid #72b5f2;
+}
+
+
+
+/* Remove o estilo padrão de link (sublinhado e cor azul) */
+.link-projeto {
+    text-decoration: none !important;
+    color: inherit; /* Mantém as cores que já definimos antes */
+    display: block; /* Garante que o link ocupe todo o espaço da coluna */
+}
+
+.caixa-projeto {
+    transition: all 0.3s ease; /* Transição suave para todas as mudanças */
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+/* Efeito ao passar o mouse no card inteiro */
+.link-projeto:hover .caixa-projeto {
+    transform: translateY(-10px); /* O card sobe levemente */
+    border-color: #72b5f2; /* Adiciona uma borda com o seu azul de destaque */
+    box-shadow: 0 10px 30px rgba(114, 181, 242, 0.2); /* Sombra suave azulada */
+}
+
+/* Garante que o título mude de cor no hover para dar feedback */
+.link-projeto:hover h3 {
+    color: #72b5f2;
+    transition: 0.3s;
+}
+
+
+.caixa-skill {
+    background-color: #1e2029; /* Cor do fundo do card */
+    border-radius: 12px;
+    padding: 15px 20px;
+    height: 85px; /* Altura fixa para manter simetria */
+    transition: 0.3s;
+}
+
+.caixa-skill:hover {
+    background-color: #252836; /* Leve destaque ao passar o mouse */
+}
+
+.caixa-logo {
+    width: 50px;
+    height: 50px;
+    background-color: #fff; /* Fundo branco do ícone, se necessário */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; /* Espaço entre logo e texto */
+}
+
+.caixa-logo img {
+    width: 70%; /* Ajusta o tamanho da imagem dentro do quadrado */
+    height: auto;
+}
+
+.caixa-txt h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.caixa-txt p {
+    color: #a0a0a0;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+/* A linha vertical cinza ao fundo */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    bottom: 0;
+    width: 2px;
+    background-color: #333842; 
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 40px; 
+    padding-left: 35px;
+}
+
+
+.timeline-ponto {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background-color: #72b5f2;
+    border-radius: 50%;
+    z-index: 2; 
+    box-shadow: 0 0 8px rgba(114, 181, 242, 0.5); 
+}
+
+.timeline-conteudo strong {
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: block;
+}
+
+.timeline-conteudo span {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+
+.timeline li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.titulo-contato {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.titulo-contato span {
+    color: #72b5f2; /* Seu azul padrão */
+}
+
+.btn-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background-color: #1e2029; /* Fundo escuro igual aos seus cards */
+    color: #dce1f2;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btn-contato:hover {
+    color: #ffffff;
+    background-color: #72b5f2; /* Fica azul ao passar o mouse */
+    transform: translateY(-10px); /* Pula um pouquinho */
+    box-shadow: 0 10px 20px rgba(114, 181, 242, 0.3);
+}
+
+/* Deixa os ícones maiores e responsivos */
+.icones-redes svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-contato:hover svg {
+    transform: scale(1.1);
+}
+
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*   Caixa da foto*/
+
+
+
+
+.caixa-com-foto{
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    position: -webkit-sticky; /* Suporte para Safari */
+    position: sticky;         /* Torna o elemento "adesivo" */
+    top: 20px;                /* Distância que ele para do topo da tela ao descer */
+    z-index: 10;
+
+}
+
+
+.foto {
+    display: flex;
+   
+     
+    
+}
+
+.foto img{
+    display: block;
+    width: 200px;
+    height: 250px;
+    border-radius: 5%;
+}
+.botao{
+    margin-top: 30px;
+    z-index: 2;
+}
+
+
+#lnome {
+    color: var(--cor-txt-azul);
+    margin-top: 10px;
+}
+
+section {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(30px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+
+/* --- RESPONSIVIDADE --- */
+
+/* Ajustes para Tablets e Celulares (Telas menores que 992px) */
+@media (max-width: 991.98px) {
+    /* Faz as colunas ocuparem a largura total */
+    .col-3, .col-9, .col-10, .col-2 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Remove o sticky da foto no mobile para não atrapalhar a leitura */
+    .caixa-com-foto {
+        position: relative !important;
+        top: 0 !important;
+        margin-bottom: 50px;
+        height: auto;
+    }
+
+    /* Esconde o botão de download do Header e deixa apenas o da caixa da foto */
+    header .col-2 {
+        display: none;
+    }
+
+    /* Centraliza o menu principal */
+    .menu-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Ajusta as margens das seções para não ficarem tão longe uma da outra */
+    .primeiro, .segundo {
+        margin-bottom: 80px;
+    }
+
+    /* Diminui os títulos para caber na tela do celular */
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    .titulo-contato {
+        font-size: 1.8rem;
+    }
+}
+
+/* Ajustes finos para Celulares Pequenos (Telas menores que 576px) */
+@media (max-width: 575.98px) {
+    p, .texto-corpo {
+        font-size: 1.1rem !important;
+    }
+
+    .caixa-skill {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .caixa-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-contato {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .caixa-imagem {
+        height: 120px; /* Reduz a altura da imagem no celular */
+    }
+
+    .caixa-texto h3 {
+        font-size: 0.9rem; /* Diminui o título para caber na linha */
+        margin-bottom: 0;
+    }
+
+    .caixa-texto {
+        padding: 10px; /* Reduz o respiro interno */
+    }
+}
