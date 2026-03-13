@@ -1,11 +1,54 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Fernando Cobra</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header class="container">
+        <div class="row align-items-center"> <nav class="col-10 justify-content-center">
+                <div class="menu-box">
+                    <a href="#home" title="home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                    </svg></a>
+                    <a href="#sobre" title="sobre"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg></a>
+                    <a href="#projetos" title="projetos"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                    <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"/>
+                    </svg></a>
+                    <a href="#skills" title="habilidades"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-file-earmark-bar-graph-fill" viewBox="0 0 16 16">
+                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m.5 10v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5m-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"/>
+                </svg></a>
+                    <a href="#experiencia" title="experiencia"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+                </svg></a>
+                    <a href="#contato" title="contato"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                </svg></a>
+                </div>
+            </nav>
+            <div class="col-2 p-3 align-self-center">
+                <a href="./src/curriculo-Lucas-Fernando-Cobra.pdf" download>
+                    <button class="btn btn-primary">Download CV</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="caixa-com-foto">
+                    <div class="foto">
+                        <img src="./src/images/eu.png" alt="fotolucas">
+                    </div>
                     <h5 id="lnome">Lucas Fernando Cobra</h5>
-        </div>
-        </div>
-
-
-
-<div class="modal fade" id="modalEmBreve" tabindex="-1" aria-labelledby="modalEmBreveLabel" aria-hidden="true">
+                    <div class="botao">
                         <a href="./src/curriculo-Lucas-Fernando-Cobra.pdf" download>
                             <button class="btn btn-primary">Download CV</button>
                         </a>
@@ -51,6 +94,24 @@
                                 <div class="col-10 col-md-4">
                                     <div class="caixa-projeto projeto-card-overlay" 
                                         data-bs-toggle="modal" 
+<<<<<<< HEAD
+=======
+                                            data-bs-target="#modalTaskPro" 
+                                            style="cursor: pointer;">
+                                        <div class="caixa-imagem">
+                                            <img src="./src/images/tskpro.JPG" alt="TaskMaster Pro">
+                                        </div>
+                                        <div class="caixa-texto-overlay">
+                                            <h3>TaskMaster Pro</h3>
+                                            <p>Clique para ver detalhes...</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="col-10 col-md-4">
+                                    <div class="caixa-projeto projeto-card-overlay" 
+                                        data-bs-toggle="modal" 
+>>>>>>> 0e8448d (Atualizaçao de projeto)
                                             data-bs-target="#modalEmBreve" 
                                             style="cursor: pointer;">
                                         <div class="caixa-imagem">
