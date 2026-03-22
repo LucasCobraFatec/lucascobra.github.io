@@ -34,22 +34,30 @@ const phrases = ["Designer", "Analista de Suporte", "Especialista em TI"];
 let i = 0, j = 0, isDeleting = false;
 
 function type() {
-  const currentPhrase = phrases[i];
-  textElement.textContent = isDeleting 
-    ? currentPhrase.substring(0, j--) 
-    : currentPhrase.substring(0, j++);
+    if (!textElement) return; // se o elemento não existir, aborta
 
-  if (!isDeleting && j === currentPhrase.length + 1) {
-    isDeleting = true;
-    setTimeout(type, 2000); // Pausa quando termina de escrever
-  } else if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % phrases.length;
-    setTimeout(type, 500);
-  } else {
-    setTimeout(type, isDeleting ? 100 : 200);
-  }
+    const currentPhrase = phrases[i];
+
+    if (isDeleting) {
+        j = Math.max(0, j - 1);
+        textElement.textContent = currentPhrase.substring(0, j);
+    } else {
+        j = Math.min(currentPhrase.length, j + 1);
+        textElement.textContent = currentPhrase.substring(0, j);
+    }
+
+    if (!isDeleting && j === currentPhrase.length) {
+        isDeleting = true;
+        setTimeout(type, 2000);
+    } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % phrases.length;
+        setTimeout(type, 500);
+    } else {
+        setTimeout(type, isDeleting ? 100 : 200);
+    }
 }
+
 type();
 
 
