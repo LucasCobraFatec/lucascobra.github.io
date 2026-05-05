@@ -1,5 +1,5 @@
 # Olá, eu sou o Lucas Cobra! 👋
-# ra2581392523038
+
 
 ### Desenvolvedor Multiplataforma | UI/UX Designer | Especialista em TI
 
